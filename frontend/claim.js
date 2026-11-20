@@ -15,7 +15,7 @@ if (!token) {
 async function loadItems() {
     try {
         const response = await fetch(
-            "http://localhost:5001/api/items"
+            "https://campus-lost-and-found-dwqr.onrender.com/api/items"
         );
 
         const items = await response.json();
@@ -54,7 +54,7 @@ claimForm.addEventListener("submit", async function(event) {
 
     try {
         const response = await fetch(
-            "http://localhost:5001/api/claims",
+            "https://campus-lost-and-found-dwqr.onrender.com/api/claims",
             {
                 method: "POST",
                 headers: {

@@ -15,14 +15,14 @@ async function loadAdminDashboard() {
     try {
         // Get all reported items
         const itemResponse = await fetch(
-            "http://localhost:5001/api/items"
+            "https://campus-lost-and-found-dwqr.onrender.com/api/items"
         );
 
         const items = await itemResponse.json();
 
         // Get all student claims
         const claimResponse = await fetch(
-            "http://localhost:5001/api/claims",
+            "https://campus-lost-and-found-dwqr.onrender.com/api/claims",
             {
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -143,7 +143,7 @@ async function loadAdminDashboard() {
 async function updateClaim(claimId, newStatus) {
     try {
         const response = await fetch(
-            "http://localhost:5001/api/claims/" + claimId,
+            "https://campus-lost-and-found-dwqr.onrender.com/api/claims/" + claimId,
             {
                 method: "PUT",
                 headers: {

@@ -19,7 +19,7 @@ registerForm.addEventListener("submit", async function(event) {
 
     try {
         const response = await fetch(
-            "http://localhost:5001/api/users/register",
+            "https://campus-lost-and-found-dwqr.onrender.com/api/users/register",
             {
                 method: "POST",
                 headers: {

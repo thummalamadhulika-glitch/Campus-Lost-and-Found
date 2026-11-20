@@ -18,7 +18,7 @@ if (!token || !user) {
 
             // Get student's reported items
             const itemResponse = await fetch(
-                "http://localhost:5001/api/items/myitems",
+                "https://campus-lost-and-found-dwqr.onrender.com/api/items/myitems",
                 {
                     headers: {
                         "Authorization": `Bearer ${token}`
@@ -85,7 +85,7 @@ if (!token || !user) {
 
             // Get student's claims
             const claimResponse = await fetch(
-                "http://localhost:5001/api/claims/myclaims",
+                "https://campus-lost-and-found-dwqr.onrender.com/api/claims/myclaims",
                 {
                     headers: {
                         "Authorization": `Bearer ${token}`
