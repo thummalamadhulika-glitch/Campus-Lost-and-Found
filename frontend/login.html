@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Campus Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Campus Lost & Found</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <section class="report-section">
+        <h1>Student Login</h1>
+        <p>Login to access your account.</p>
+        <form id="loginForm">
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage"></p>
+        <p>
+            Don't have an account?
+            <a href="register.html">Register here</a>
+        </p>
+    </section>
+    <footer>
+        <p>Campus Lost and Found Portal | Sai University</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

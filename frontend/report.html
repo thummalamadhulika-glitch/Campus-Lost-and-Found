@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Item | Campus Lost and Found</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Campus Lost & Found</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Report Item Section -->
+    <section class="report-section">
+
+        <div class="report-container">
+
+            <h1>Report a Lost or Found Item</h1>
+
+            <p>
+                Help your campus community by reporting
+                lost or found belongings.
+            </p>
+
+            <form id="reportForm">
+
+                <!-- Item Type -->
+                <label for="itemType">Report Type</label>
+
+                <select id="itemType" required>
+                    <option value="">Select Report Type</option>
+                    <option value="Lost">Lost Item</option>
+                    <option value="Found">Found Item</option>
+                </select>
+
+
+                <!-- Item Name -->
+                <label for="itemName">Item Name</label>
+
+                <input
+                    type="text"
+                    id="itemName"
+                    placeholder="Enter item name"
+                    required
+                >
+
+
+                <!-- Category -->
+                <label for="itemCategory">Category</label>
+
+                <select id="itemCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Documents">Documents</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Books">Books</option>
+                    <option value="Others">Others</option>
+                </select>
+
+
+                <!-- Description -->
+                <label for="description">Description</label>
+
+                <textarea
+                    id="description"
+                    placeholder="Describe the item"
+                    rows="4"
+                    required
+                ></textarea>
+
+
+                <!-- Location -->
+                <label for="location">Location</label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Where was the item lost or found?"
+                    required
+                >
+
+
+                <!-- Date -->
+                <label for="itemDate">Date</label>
+
+                <input
+                    type="date"
+                    id="itemDate"
+                    required
+                >
+
+
+                <!-- Image Upload -->
+                <label for="itemImage">Upload Item Image (Optional)</label>
+
+                <input
+                    type="file"
+                    id="itemImage"
+                    accept="image/*"
+                >
+
+
+                <!-- Submit Button -->
+                <button type="submit">
+                    Submit Report
+                </button>
+
+                <!-- Message -->
+                <p id="message"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Campus Lost and Found Portal.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script src="report.js"></script>
+
+</body>
+</html>

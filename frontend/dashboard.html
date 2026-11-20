@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Campus Lost & Found</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Item</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+
+        <h1>Student Dashboard</h1>
+
+        <p>
+            Welcome, <span id="studentName">Student</span>!
+        </p>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <h2 id="totalItems">0</h2>
+                <p>Total Items Reported</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="lostItems">0</h2>
+                <p>Lost Items</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="foundItems">0</h2>
+                <p>Found Items</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="totalClaims">0</h2>
+                <p>Claims Submitted</p>
+            </div>
+
+        </div>
+
+        <!-- My Reported Items -->
+        <h2 class="dashboard-heading">My Reported Items</h2>
+
+        <div id="myItems" class="item-container">
+            <p>No items reported yet.</p>
+        </div>
+
+        <!-- My Claims -->
+        <h2 class="dashboard-heading">My Claims</h2>
+
+        <div id="myClaims" class="item-container">
+            <p>No claims submitted yet.</p>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="dashboard-actions">
+
+            <h2>Quick Actions</h2>
+
+            <a href="report.html?type=Lost">
+                <button>Report Lost Item</button>
+            </a>
+
+            <a href="report.html?type=Found">
+                <button>Report Found Item</button>
+            </a>
+
+            <a href="index.html">
+                <button>Browse Items</button>
+            </a>
+
+            <a href="claim.html">
+                <button>Submit a Claim</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Campus Lost and Found Portal | Sai University</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost and Found Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            Campus Lost & Found
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#items">Browse Items</a>
+            <a href="#about">About</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="hero">
+
+        <h1>Lost Something on Campus?</h1>
+
+        <p>
+            Don't worry! Find your lost belongings
+            or help someone recover theirs.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button onclick="showMessage('Lost')">
+                Report Lost Item
+            </button>
+
+            <button onclick="showMessage('Found')">
+                Report Found Item
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Search Section -->
+    <section class="items-section" id="items">
+
+        <h2>Recently Reported Items</h2>
+
+        <p>
+            Search for lost and found belongings on campus.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search item name..."
+            >
+
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Documents">Documents</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Books">Books</option>
+            </select>
+
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <option value="Lost">Lost</option>
+                <option value="Found">Found</option>
+            </select>
+
+            <!-- Date Sorting -->
+            <select id="dateSort">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
+
+        </div>
+
+        <div class="item-container" id="itemList">
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Our Portal</h2>
+
+        <p>
+            Campus Lost and Found Portal is designed
+            to help students report lost belongings,
+            find discovered items and reconnect
+            people with their belongings.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Campus Lost and Found Portal
+            | Sai University
+        </p>
+
+        <p>Helping students find what they lost.</p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

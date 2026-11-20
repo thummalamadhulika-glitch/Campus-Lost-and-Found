@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Claim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Campus Lost & Found</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <section class="report-section">
+        <h1>Submit an Item Claim</h1>
+        <p>Provide details to help verify that the item belongs to you.</p>
+
+        <form id="claimForm">
+
+            <label for="itemId">Select Item</label>
+            <select id="itemId" required>
+                <option value="">Loading items...</option>
+            </select>
+
+            <label for="claimDescription">Why are you claiming this item?</label>
+            <textarea
+                id="claimDescription"
+                rows="4"
+                placeholder="Describe identifying details of the item..."
+                required
+            ></textarea>
+
+            <label for="additionalDetails">Additional Details</label>
+            <textarea
+                id="additionalDetails"
+                rows="3"
+                placeholder="Enter any additional information"
+            ></textarea>
+
+            <button type="submit">Submit Claim</button>
+
+        </form>
+
+        <p id="claimMessage"></p>
+    </section>
+
+    <footer>
+        <p>Campus Lost and Found Portal | Sai University</p>
+    </footer>
+
+    <script src="claim.js"></script>
+
+</body>
+</html>
